@@ -47,7 +47,7 @@
 
 
 <!-- second section - banner section -->
- <div class="flex items-center gap-[30px] md:pl-[90px] md:pr-[50px] md:pt-[30px] pl-[40px] pr-[40px] pt-[20px] md:flex-row flex-col-reverse">
+ <div class="flex items-center gap-[30px] md:pl-[90px] md:pr-[50px] md:pt-[30px] pl-[40px] pr-[40px] pt-[20px] md:flex-row flex-col-reverse section-margin">
   <div>
     <h2 class="font-extrabold mb-[20px] text-center md:text-left"><span class="text-sky-500">English</span> is Easy!!</h2>
     <p class="text-[10px] mb-[20px]">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
@@ -61,6 +61,68 @@
  </div>
 
  <!-- API-Based let's learn vocabulary section -->
+<div class="section-margin">
+    <h2 class="font-extrabold mb-[20px] text-center md:text-center"><span class="text-sky-500">Let's</span> Learn vocabularies</h2>
+  <div id="lessons-container" class="flex gap-5 flex-wrap justify-center pl-[30px] pr-[30px] md:pl-[90px] md:pr-[90px]"></div>
+</div>
+
+<!-- spinner - loading -->
+ <div id="spinner" class="flex justify-center items-center hidden mb-5"><span class="loading loading-spinner text-info text-sky-800"></span></div>
+
+<!-- by clicking on any level it shows a vocabulary sets -->
+ <div id="word-container" class="bg-gray-100 w-11/12 mx-auto my-10 grid grid-cols-2 rounded-md md:grid-cols-3 gap-5 section-margin p-8">
+     <div class="text-center col-span-full space-y-2 vh-full">
+       <p class="font-body text-[12px] text-gray-400">আপনি এখনো কোন Lesson Select করেন নি</p>
+       <h2 class="font-bold font-body text-gray-600">একটি Lesson Select করুন।</h2>
+      </div>
+ </div>
+
+<!-- detail-card -->
+ <dialog id="my_modal_5" class="modal modal-middle sm:modal-middle">
+  <div class="modal-box">
+    <div class="rounded-2xl bg-white py-5 px-5" id="detail-card">
+      <!-- main content in js -->
+    </div>
+    <div class="modal-action">
+      <form method="dialog">
+        <button class="p-1 bg-[#422ad5] text-[10px] font-bold text-white rounded-md btn">Complete Learning</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+ <!-- FAQ -->
+  <div class="text-[10px] px-20 section-margin">
+    <h2 class="font-extrabold mb-[30px] text-center text-[15px]"><span class="text-sky-500">Frequently </span> Asked Questions</h2>
+    <h1 class="mb-[20px] text-neutral-500 bg-slate-200 p-1 rounded-md">1. How can I start learning English on this website?</h1>
+    <h1  class="mb-[20px] text-neutral-500 bg-slate-200 p-1 rounded-md">2. Is this website free to use?</h1>
+    <h1  class="mb-[20px] text-neutral-500 bg-slate-200 p-1 rounded-md">3.  Do I need to create an account?</h1>
+    <h1 class="mb-[20px] text-neutral-500 bg-slate-200 p-1 rounded-md">4. How can I build my English vocabulary?</h1>
+    <h1  class="mb-[20px] text-neutral-500 bg-slate-200 p-1 rounded-md">5. Do you offer certificates for completed courses?</h1>
+  </div>
+
+ <!-- footer -->
+  <footer class="flex justify-between px-20 pb-10 pt-3 bg-gray-100 md:flex-row flex-col gap-5">
+    <div>
+<div class="flex items-center py-3">
+    <p class="text-[14px] font-bold">English</p>
+    <img class="size-5" src="assets/logo.png">
+    <p class="text-[14px] font-bold font-body">জানালা</p>
+</div>
+      <p class="text-[10px] text-slate-600 font-body">ইংরেজি শিখুন সহজে</p>
+      <p class="text-[10px] text-slate-600">Providing ED-Tech Applications since 2025</p>
+    </div>
+    <div class="flex flex-col py-3 mt-4">
+      <p class="text-[9px] py-3 text-slate-600">FOLLOW US</p>
+      <div class="flex items-center gap-4 pb-2">
+        <a href="#"><img class="size-4" src="assets/fb-thumb.png"></a>
+        <a href="#"><img class="size-4" src="assets/youtube-thumb.png"></a>
+        <a href="#"><img class="size-4" src="assets/instagram-thumb.png"></a>
+        <a href="#"><img class="size-4" src="assets/github-thumb.png"></a>
+      </div>
+    </div>
+  </footer>
+
   <script src="index.js"></script>
 </body>
 </html>
